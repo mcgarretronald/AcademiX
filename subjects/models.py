@@ -7,7 +7,6 @@ class Subject(models.Model):
     subject_id = models.AutoField(primary_key=True)
     subject_name = models.CharField(max_length=100)
     teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE)
-    class_model = models.ForeignKey(Class, on_delete=models.CASCADE)
     school = models.ForeignKey(School, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
