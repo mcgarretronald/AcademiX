@@ -44,6 +44,17 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'users',
+    'exams',
+    'feepayments',
+    'parent',
+    'student',
+    'classes',
+    'subjects',
+    'admin_user',
+    'announcements',
+    'parentstudentlink',
+    'school',
+    'teacher',
     
 ]
 

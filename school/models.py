@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class School(models.Model):
     school_id = models.AutoField(primary_key=True)
     school_name = models.CharField(max_length=255)
@@ -10,5 +9,9 @@ class School(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        db_table = 'school'  # Explicitly set table name
+
     def __str__(self):
         return self.school_name
+
